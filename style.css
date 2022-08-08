@@ -1,0 +1,211 @@
+/* - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces) 
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-image: linear-gradient(120deg, #e55d87, #5fc3e4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+  } */
+  
+  .box-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+  }
+  /* @media (max-width: 980px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-form div {
+    height: auto;
+  } */
+  .box-form .left {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .overlay{
+    min-width: 300px;
+    max-width: 300px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .overlay > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay img:nth-child(2){
+    height: 100%;
+    width: 100%;
+  }
+  .overlay > .desktop {
+    display: inline-block;
+  }
+  .overlay > .mobile {
+    display: none;
+  }
+  .right {
+    padding: 28px;
+    background: hsl(0, 0%, 100%);
+  }
+  .right > .smell {
+    font-size: 11.6px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    letter-spacing: 3.9px;
+    margin-bottom: 20px;
+  }
+  .right > h1 {
+    color: hsl(212, 21%, 14%);
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    line-height: 1;
+    letter-spacing: px;
+    margin-bottom: 23px;
+  }
+  .right > .main {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: "Montserrat";
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+  .right > .rate {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+  }
+  .rate > h1 {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+  }
+  .rate > sup {
+    /* margin-right: px; */
+    margin-left: 18.9px;
+    color: hsl(228, 12%, 48%);
+    /* font-family: "Fraunces"; */
+  }
+  .right > .btn {
+    width: 100%;
+    height: 48px;
+    display:-ms-inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: hsl(158, 36%, 37%);
+    outline: none;
+    border: none;
+    border-radius: 7.5px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+  }
+  .btn > img {
+    margin-right: 10px;
+  }
+  .right > .btn:hover {
+    background: hsl(158, 63%, 32%);
+  }
+
+  @media screen and (max-width: 375px){
+    .left{
+      margin: 25px 18px;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      overflow:hidden;
+      flex-flow: wrap;
+    }
+    .overlay{
+      height: auto;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .overlay > .desktop{
+      display: none;
+      height: auto;
+    }
+    .overlay > .mobile{
+      display: inline-block;
+      flex-flow: wrap;
+      height: auto;
+    }
+    .right{
+      /* margin: 10px 8px; */
+      padding: 18px 18px;
+      flex-flow: wrap;
+      box-sizing: border-box;
+      
+    }
+    .right > .smell{
+      margin-bottom: 12px;
+      font-size: 9px;
+      letter-spacing: 3.5px;
+    }
+    .right > h1{
+      margin-bottom: 13px;
+      font-size: 24.3px;
+      letter-spacing: 1px;
+    }
+    .right > .main{
+      margin-bottom: 10px;
+      font-size: 10.8px;
+    }
+    .right > .rate{
+      margin-bottom: auto;
+      font-size: 12px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
